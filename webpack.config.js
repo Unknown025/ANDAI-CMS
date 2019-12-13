@@ -3,8 +3,7 @@ const autoPrefixer = require('autoprefixer');
 module.exports = {
     // mode: 'production',
     entry: {
-        index: ['./site/css/style.scss', './site/js/index.js'],
-        admin: ['./site/admin/css/admin.scss', './site/admin/js/index.js']
+        index: ['./site/css/style.scss', './site/js/index.js']
     },
     output: {
         filename: '[name].js',
