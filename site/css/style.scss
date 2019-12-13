@@ -1,13 +1,36 @@
+$mdc-theme-primary: #3700B3;
+$mdc-theme-secondary: #03DAC6;
+$mdc-theme-on-primary: #FFFFFF;
+$mdc-theme-on-secondary: #000000;
+$mdc-theme-on-background: #FFFFFF;
+$mdc-theme-background: #121212;
+$mdc-theme-surface: #121212;
+$mdc-theme-on-surface: #FFFFFF;
+
 @import "~@material/drawer/mdc-drawer";
 @import "~@material/list/mdc-list";
 @import "~@material/top-app-bar/mdc-top-app-bar";
 @import "~@material/icon-button/mdc-icon-button";
+@import "~@material/layout-grid/mdc-layout-grid";
+@import "~@material/card/mdc-card";
+@import "~@material/button/mdc-button";
+@import "~@material/typography/mdc-typography";
+@import "~@material/elevation/mdc-elevation";
+@import "~@material/animation/functions";
+@import "~@material/animation/variables";
+@import "~@material/textfield/mdc-text-field";
 
 body {
   display: flex;
   height: 100vh;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: $mdc-theme-on-primary;
+  background-color: $mdc-theme-background;
+}
+
+.mdc-top-app-bar__title, .mdc-list-item__text {
+  color: $mdc-theme-on-primary;
 }
 
 .mdc-drawer-app-content {
@@ -23,4 +46,52 @@ body {
 
 .app-bar {
   position: absolute;
+}
+
+.posts-card-content {
+  padding: 16px;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.mdc-card {
+  margin-bottom: 5%;
+  animation: mdc-animation-enter(/* $name: */
+                  fade-in, /* $duration: */
+                  350ms);
+}
+
+.image-display {
+  background-image: url('/site/images/WinXP.jpg');
+  height: 500px;
+  background-size: cover;
+  border: solid #000d91;
+
+  animation: mdc-animation-enter(/* $name: */
+                  fade-in, /* $duration: */
+                  500ms);
+}
+
+@keyframes search-bar {
+  0% {opacity: 0; display: none; transform: translateX(100px)}
+  100% {opacity: 100%; transform: translateX(0px)}
+}
+
+#search-bar {
+  animation-name: search-bar;
+  animation-duration: 350ms;
+}
+
+.mdc-text-field {
+  background-color: #37009f !important;
 }

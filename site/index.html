@@ -11,17 +11,9 @@
 <aside class="mdc-drawer mdc-drawer--dismissible">
     <div class="mdc-drawer__content">
         <div class="mdc-list">
-            <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+            <a class="mdc-list-item mdc-list-item--activated" href="/site" aria-current="page">
                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-                <span class="mdc-list-item__text">Inbox</span>
-            </a>
-            <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-                <span class="mdc-list-item__text">Outgoing</span>
-            </a>
-            <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-                <span class="mdc-list-item__text">Drafts</span>
+                <span class="mdc-list-item__text">Home</span>
             </a>
         </div>
     </div>
@@ -34,12 +26,106 @@
                 <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
                 <span class="mdc-top-app-bar__title">ANDAI CMS</span>
             </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                <div class="search">
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" onclick="document.getElementById('search-bar').style.display = null">
+                        search
+                    </button>
+                    <div class="mdc-text-field" id="search-bar" style="display: none">
+                        <input type="text" id="my-text-field" class="mdc-text-field__input">
+                        <label class="mdc-floating-label" for="my-text-field">Search...</label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                </div>
+            </section>
         </div>
     </header>
 
     <main class="main-content" id="main-content">
         <div class="mdc-top-app-bar--fixed-adjust">
-            App Content
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell"></div>
+                    <div class="mdc-layout-grid__cell">
+                        <div class="mdc-card mdc-card--outlined">
+                            <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                                <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+                                     style="background-image: url('https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg');"></div>
+                                <div class="demo-card__primary posts-card-content">
+                                    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Welcome to the
+                                        CMS</h2>
+                                    <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">by
+                                        Administrator</h3>
+                                </div>
+                                <div class="demo-card__secondary mdc-typography mdc-typography--body2 posts-card-content">
+                                    Read about the features available in this first iteration of the CMS!
+                                </div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <div class="mdc-card__action-buttons">
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button" onclick="location.href = 'welcome.html'"><span
+                                            class="mdc-button__ripple"></span> Read
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button"><span
+                                            class="mdc-button__ripple"></span> Bookmark
+                                    </button>
+                                </div>
+                                <div class="mdc-card__action-icons">
+                                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                                            title="Share" data-mdc-ripple-is-unbounded="true">favorite_border
+                                    </button>
+                                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                                            title="Share" data-mdc-ripple-is-unbounded="true">share
+                                    </button>
+                                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                                            title="More options" data-mdc-ripple-is-unbounded="true">more_vert
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdc-card mdc-card--outlined">
+                            <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                                <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+                                     style="background-image: url('/site/images/WinXP.jpg');"></div>
+                                <div class="demo-card__primary posts-card-content">
+                                    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">What is a
+                                        CMS?</h2>
+                                    <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">by
+                                        Administrator</h3>
+                                </div>
+                                <div class="demo-card__secondary mdc-typography mdc-typography--body2 posts-card-content">
+                                    What is a CMS, and what does it do? The answer is complicated. CMS stands for
+                                    "Content Management System", which in return covers a large amount of roles,
+                                    including but not limited to...
+                                </div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <div class="mdc-card__action-buttons">
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button"><span
+                                            class="mdc-button__ripple"></span> Read
+                                    </button>
+                                    <button class="mdc-button mdc-card__action mdc-card__action--button"><span
+                                            class="mdc-button__ripple"></span> Bookmark
+                                    </button>
+                                </div>
+                                <div class="mdc-card__action-icons">
+                                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                                            title="Share" data-mdc-ripple-is-unbounded="true">favorite_border
+                                    </button>
+                                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                                            title="Share" data-mdc-ripple-is-unbounded="true">share
+                                    </button>
+                                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                                            title="More options" data-mdc-ripple-is-unbounded="true">more_vert
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell"></div>
+                </div>
+            </div>
         </div>
     </main>
 </div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700">
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <title>Welcome | ANDAI CMS</title>
+</head>
+<body>
+<aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__content">
+        <div class="mdc-list">
+            <a class="mdc-list-item mdc-list-item--activated" href="/site" aria-current="page">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                <span class="mdc-list-item__text">Home</span>
+            </a>
+        </div>
+    </div>
+</aside>
+
+<div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar" id="app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                <span class="mdc-top-app-bar__title">Welcome | ANDAI CMS Posts</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">
+                    search
+                </button>
+            </section>
+        </div>
+    </header>
+
+    <main class="main-content" id="main-content">
+        <div class="mdc-top-app-bar--fixed-adjust">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-2"></div>
+                    <div class="mdc-layout-grid__cell--span-8 mdc-typography">
+                        <h2 class="mdc-typography--headline2">Welcome to the CMS</h2>
+                        <div class="image-display"></div>
+                        <h6 class="mdc-typography--headline6">Posted by Administrator</h6>
+                        <p>
+                            Welcome to the test CMS. This CMS provides a lot of different features, including a default
+                            dark
+                            mode, animated transitions for posts, and beautiful material design components.
+
+                            A lot of unique features are available when using Material Design Components for the Web.
+                            The
+                            project is officially supported by Google, and adheres to all their design standards.
+
+                            More and more components are regularly added, with support also available via their Discord
+                            server and GitHub page. They also have components available for iOS and Android, as well as
+                            their own framework named "Flutter".
+
+                            <br>
+
+                            Besides being able to use material design in every conceivable platform, <a
+                                href="https://material.io">Material.io</a> also provides guidelines for how to use
+                            Material Design in the best way, especially in terms of user experience.
+                        </p>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-2"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../index.js"></script>
+</body>
+</html>
