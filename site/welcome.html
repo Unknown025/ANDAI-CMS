@@ -28,9 +28,16 @@
                 <span class="mdc-top-app-bar__title">Welcome | ANDAI CMS Posts</span>
             </section>
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">
-                    search
-                </button>
+                <div class="search">
+                    <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" onclick="document.getElementById('search-bar').style.display = null">
+                        search
+                    </button>
+                    <div class="mdc-text-field" id="search-bar" style="display: none">
+                        <input type="text" id="my-text-field" class="mdc-text-field__input">
+                        <label class="mdc-floating-label" for="my-text-field">Search...</label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                </div>
             </section>
         </div>
     </header>
